@@ -52,8 +52,10 @@ p {
   float: left;
 }
 
-.floats {
-  display: block;
-  overflow: auto;
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
