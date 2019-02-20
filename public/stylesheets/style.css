@@ -10,6 +10,13 @@ a {
   color: #ff5252;
 }
 
+h1, h2, h3 {
+  margin-top: 50px;
+  font-family: "Playfair Display", "Montserrat", "Lucida Grande", sans-serif;
+  font-weight: normal;
+  color: #080808;
+}
+
 h1 {
   font-size: 42px;
 }
@@ -22,10 +29,21 @@ p {
   color: #646464;
 }
 
+ul {
+  color: #646464;
+}
+
+.card {
+  width: 42%;
+  padding: 15px;
+  margin: 10px;
+  border: solid 1px #888888;
+  border-radius: 10px;
+}
+
 .center {
   display: block;
   margin: 0 auto;
-  overflow: auto;
 }
 
 .clear {
@@ -38,18 +56,6 @@ p {
   margin: 0 auto;
   margin-top: 50px;
   padding: 15px;
-}
-
-.display {
-  margin-top: 50px;
-  font-family: "Playfair Display", "Montserrat", "Lucida Grande", sans-serif;
-  font-weight: normal;
-  color: #080808;
-}
-
-.left {
-  display: block;
-  float: left;
 }
 
 .flex {
