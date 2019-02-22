@@ -11,18 +11,28 @@ a {
 }
 
 h1, h2, h3 {
-  margin-top: 50px;
   font-family: "Playfair Display", "Montserrat", "Lucida Grande", sans-serif;
   font-weight: normal;
   color: #080808;
 }
 
 h1 {
+  margin-top: 50px;
   font-size: 42px;
 }
 
 h2 {
+  margin-top: 50px;
   font-size: 38px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 15px;
 }
 
 p {
@@ -34,20 +44,15 @@ ul {
 }
 
 .card {
-  width: 42%;
+  width: 100%;
   padding: 15px;
-  margin: 10px;
-  border: solid 1px #888888;
-  border-radius: 10px;
+  border-bottom: solid 1px #646464;
+  text-align: center;
 }
 
 .center {
   display: block;
   margin: 0 auto;
-}
-
-.clear {
-  clear: both;
 }
 
 .container {
@@ -65,3 +70,10 @@ ul {
   justify-content: space-around;
 }
 
+.mt-0 {
+  margin-top: 0;
+}
+
+.screenshot {
+  border: solid 1px #dddddd;
+}
