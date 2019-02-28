@@ -1,131 +1,139 @@
 extends layout
 
 block content
-  div.container
-    img(src="/images/bennett-garner-prof.png" 
-      alt="Bennett Garner"
-      width="300px"
-      class="center")
+  img(src="/images/bennett-garner-prof.png"
+    alt="Bennett Garner"
+    width="300px"
+    class="center")
 
-    h1 Bennett Garner, Web Developer
+  h1 Bennett Garner, Web Developer
+  p.
+    I'm a full stack web developer with a focus on back-end
+    development using Python (Flask, Django) or JavaScript (NodeJS,
+    Express).
+  p.
+    I've worked extensively with relational databases
+    (PostgreSQL and MySQL), and I'm also familiar with non-relational
+    databases like MongoDB.
+  p.
+    For deployment, I prefer Google Cloud.
+
+  h2#connect Connect
+  div.flex
+    div
+      a(href="https://github.com/bennett39"
+        target="_blank"
+        aria-label="Bennett Garner GitHub")
+        img(src="images/iconmonstr-github-1-64.png"
+          alt="GitHub")
+    div
+      a(href="https://www.linkedin.com/in/bennettgarner/"
+        target="_blank"
+        aria-label="Bennett Garner LinkedIn")
+        img(src="images/iconmonstr-linkedin-4-64.png"
+          alt="LinkedIn")
+    div
+      a(href="https://medium.com/@BennettGarner"
+        target="_blank"
+        aria-label="Bennett Garner Medium")
+        img(src="images/iconmonstr-medium-4-64.png"
+          alt="Medium")
+    div
+      a(href="https://twitter.com/bennettGarner"
+        target="_blank"
+        aria-label="Bennett Garner Twitter")
+        img(src="images/iconmonstr-twitter-4-64.png"
+          alt="Twitter")
+    div
+      a(href="mailto:hello@bennettgarner.com"
+        target="_blank"
+        aria-label="Bennett Garner Email")
+        img(src="images/iconmonstr-email-10-64.png"
+          alt="Email")
+
+  h2 Highlights
+  ul
+    li Top Writer in Technology & Software on Medium
+    li Code Tutor at Hacker Hours in Brooklyn
+    li Contributor to SongPro, mss.nyc, Django, freeCodeCamp
+    li Creator of Stock Trader
+
+  h2 Projects
+  div.card
+    h3.mt-0 Stock Trader
+    a(href="https://stocktrader39.herokuapp.com"
+      target="_blank")
+      img.screenshot(src="images/screen-stocktrader.png")
     p.
-      I'm a full stack web developer with a focus on back-end
-      development using Python (Flask, Django) or JavaScript (NodeJS,
-      Express). 
+      A Python Flask web application that allows you to try your hand
+      at trading stocks. Currently v2.0.
     p.
-      I've worked extensively with relational databases
-      (PostgreSQL and MySQL), and I'm also familiar with non-relational
-      databases like MongoDB. 
+      Uses real data from the IEX API, and stores user portfolios,
+      transactions, and cash balances in a PostgreSQL database. Uses
+      SQLAlchemy for database models and queries. Front end is
+      Bootstrap 4, HTML, CSS, and Jinja templates. Deployed to Heroku.
+  div.card
+    h3 Intertech Dev Feed
+    a(href="https://github.com/bennett39/dev-feed"
+      target="_blank")
+      img.screenshot(src="images/screen-devfeed.png")
     p.
-      For deployment, I prefer Google Cloud.
+      As an independent contractor, develop and maintain a Python
+      command line interface (CLI) that collects and filters articles
+      from the Feedly API for use in Intertech's weekly dev digest
+      publication. Flexible application supports multiple command line
+      arguments to fetch various types and quantities of articles.
+  div.card
+    h3 Twitter Bot
+    a(href="https://github.com/bennett39/twitter-bot"
+      target="_blank")
+      img.screenshot(src="images/screen-twitterbot.png")
+    p.
+      A bot that automates most of my Twitter interactions, including
+      favoriting tweets that mention me, thanking users who share
+      my Medium articles on Twitter, and following back users who
+      mention me.
+    p.
+      Uses the Tweepy Python wrapper for the Twitter standard API.
+      Runs via a bash alias from the command line or can be deployed
+      on any cloud platform as a Flask app.
+  div.card
+    h3 Garner Engineering
+    a(href="https://github.com/bennett39/garner-eng"
+      target="_blank")
+      img.screenshot(src="images/screen-garnereng.png")
+    p.
+      Developed a Django application for managing clients, projects,
+      and field reports for a leading dam engineering firm in Western
+      North Carolina. Uses MySQL database and deployed with Google
+      Cloud's Google App Engine and Cloud SQL. Incorporates Django
+      user authentication and uses Django templating, HTML, Bootstrap
+      4, and custom CSS for the front-end.
+    p.
+      Also responsible for creation and maintenance of Garner
+      Engineering's public website--a WordPress site that ranks in
+      Google's top spots for target SEO keywords.
 
-    h2 Connect
-    div.flex
-      div
-        a(href="https://github.com/bennett39" 
-          aria-label="Bennett Garner GitHub")
-          img(src="images/iconmonstr-github-1-64.png"
-            alt="GitHub")
-      div
-        a(href="https://www.linkedin.com/in/bennettgarner/"
-          aria-label="Bennett Garner LinkedIn")
-          img(src="images/iconmonstr-linkedin-4-64.png"
-            alt="LinkedIn")
-      div
-        a(href="https://medium.com/@BennettGarner"
-          aria-label="Bennett Garner Medium")
-          img(src="images/iconmonstr-medium-4-64.png"
-            alt="Medium")
-      div
-        a(href="https://twitter.com/bennettGarner"
-          aria-label="Bennett Garner Twitter")
-          img(src="images/iconmonstr-twitter-4-64.png"
-            alt="Twitter")
-      div
-        a(href="mailto:hello@bennettgarner.com"
-          aria-label="Bennett Garner Email")
-          img(src="images/iconmonstr-email-10-64.png"
-            alt="Email")
-
-    h2 Highlights
-    ul
-      li Top Writer in Technology & Software on Medium
-      li Code Tutor at Hacker Hours in Brooklyn
-      li Contributor to SongPro, mss.nyc, Django, freeCodeCamp
-      li Creator of Stock Trader
-
-    h2 Projects
-    div.card
-      h3.mt-0 Stock Trader
-      a(href="https://stocktrader39.herokuapp.com")
-        img.screenshot(src="images/screen-stocktrader.png")
-      p.
-        A Python Flask web application that allows you to try your hand
-        at trading stocks. Currently v2.0.
-      p.
-        Uses real data from the IEX API, and stores user portfolios,
-        transactions, and cash balances in a PostgreSQL database. Uses
-        SQLAlchemy for database models and queries. Front end is
-        Bootstrap 4, HTML, CSS, and Jinja templates. Deployed to Heroku.
-    div.card
-      h3 Intertech Dev Feed
-      a(href="https://github.com/bennett39/dev-feed")
-        img.screenshot(src="images/screen-devfeed.png")
-      p.
-        As an independent contractor, develop and maintain a Python
-        command line interface (CLI) that collects and filters articles
-        from the Feedly API for use in Intertech's weekly dev digest
-        publication. Flexible application supports multiple command line
-        arguments to fetch various types and quantities of articles.
-    div.card
-      h3 Twitter Bot
-      a(href="https://github.com/bennett39/twitter-bot")
-        img.screenshot(src="images/screen-twitterbot.png")
-      p.
-        A bot that automates most of my Twitter interactions, including
-        favoriting tweets that mention me, thanking users who share
-        my Medium articles on Twitter, and following back users who
-        mention me.
-      p.
-        Uses the Tweepy Python wrapper for the Twitter standard API.
-        Runs via a bash alias from the command line or can be deployed
-        on any cloud platform as a Flask app.
-    div.card
-      h3 Garner Engineering
-      a(href="https://github.com/bennett39/garner-eng")
-        img.screenshot(src="images/screen-garnereng.png")
-      p.
-        Developed a Django application for managing clients, projects,
-        and field reports for a leading dam engineering firm in Western
-        North Carolina. Uses MySQL database and deployed with Google
-        Cloud's Google App Engine and Cloud SQL. Incorporates Django
-        user authentication and uses Django templating, HTML, Bootstrap
-        4, and custom CSS for the front-end.
-      p.
-        Also responsible for creation and maintenance of Garner
-        Engineering's public website--a WordPress site that ranks in
-        Google's top spots for target SEO keywords.
-
-    h2 Technologies
-    div.flex
-      div
-        ul
-          li Python 
-          li JavaScript
-          li SQL
-          li C
-      div    
-        ul
-          li Django 
-          li Flask
-          li NodeJS 
-      div
-        ul 
-          li React
-          li Bootstrap 4
-      div
-        ul
-          li Git / GitHub 
-          li Linux - Ubuntu
-          li Agile & TDD experience
+  h2 Technologies
+  div.flex
+    div
+      ul
+        li Python
+        li JavaScript
+        li SQL
+        li C
+    div
+      ul
+        li Django
+        li Flask
+        li NodeJS
+    div
+      ul
+        li React
+        li Bootstrap 4
+    div
+      ul
+        li Git / GitHub
+        li Linux - Ubuntu
+        li Agile & TDD experience
 
