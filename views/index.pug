@@ -14,7 +14,7 @@ block content
     I've worked extensively with modern database (PostgreSQL, MySQL) and caching (Redis) technologies. Heavy
     Celery user for backgrounding data-intensive tasks.
   p.
-    For deployment, Google Cloud Platform but I've worked a lot with AWS. CI/CD evangelist & Docker user.
+    For deployment, I prefer Google Cloud Platform but I've worked a lot with AWS. CI/CD evangelist & Docker user.
   p.
     Want the personal details? Learn <a href="/about">about me</a>.
 
@@ -55,7 +55,7 @@ block content
   ul
     li.
       <a href="https://medium.com/@BennettGarner">Top Writer in
-      Software</a> & Software Development on Medium (330k views & 2.3k followers)
+      Python</a> & Software Development on Medium (390k views & 2.4k followers)
     li.
       Code Tutor at <a href="https://www.meetup.com/hackerhours/">Hacker
       Hours</a> in Brooklyn
@@ -67,13 +67,17 @@ block content
     a(href="http://pulitzer39.herokuapp.com/" target="_blank")
       img.screenshot(src="images/screen-pulitzer.gif")
     p.
-      I have a goal of reading all the Pulitzer Prize winning novels. However, every time I go to the library,
-      I have to look up a list of the winners and remember which ones I've already read. This site is a basic
-      checklist that solves that problem.
+      An anonymous chat application that uses SocketIO to instantly push
+      new messages to all connected clients. Can deploy as a standalone
+      app or as a chat component in a larger application.
     p.
-      The backend is a Django application that uses REST Framework to serialize Book and Author models.
-      Postgres database. Front end is React using CSS flexbox. Makes AJAX calls to the API when a checkbox
-      is clicked.
+      Uses jQuery and the SocketIO client on the frontend. NodeJS
+      backend. All message data is stored client-side, meaning chats
+      disappear once you've left the session and the backend has no
+      storage overhead.
+    p.
+      Deployed to Google Cloud with manual worker scaling so sockets are
+      consistent for all users.
 
   div.card
     h3 Socket Chat
@@ -108,6 +112,22 @@ block content
     p.
       CI/CD via Travis. Automatic deploys of passing
       builds to Heroku.
+
+  div.card
+    h3 CCI Songbook
+    a(href="https://ccisongbook.herokuapp.com" target="_blank")
+      img.screenshot(src="images/screen-ccisongbook.png")
+    p.
+      Clone and work in an exiting open source codebase from mss.nyc to
+      launch a Ruby Middleman static site for lyrics and guitar chords for a
+      summer camp.
+    p.
+      Makes use of the SongPro guitar chord parser and PDF generation
+      tools to create individual song sheets and an entire downloadable
+      songbook that campers and counselors can use.
+    p.
+      Bootstrap styling with React components for toggling of views.
+      Deployed to Google Cloud Platform.
 
   div.card
     h3 Intertech Dev Feed
@@ -148,6 +168,10 @@ block content
       Cloud's Google App Engine and Cloud SQL. Incorporates Django
       user authentication and uses Django templating, HTML, Bootstrap
       4, and custom CSS for the front-end.
+    p.
+      Also responsible for creation and maintenance of Garner
+      Engineering's public website--a WordPress site that ranks in
+      Google's top spots for target SEO keywords.
 
   h2 Technologies
   div.flex
@@ -164,18 +188,12 @@ block content
         li NodeJS
     div
       ul
-        li Celery
-        li Redis
-        li REST Framework
-    div
-      ul
         li React
         li Bootstrap 4
-        li jQuery
     div
       ul
         li Git / GitHub
-        li Linux
+        li Linux - Ubuntu
         li Agile & TDD experience
 
     div(style="border-top: solid 1px #646464; margin-top: 100px;")
