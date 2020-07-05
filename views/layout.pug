@@ -12,15 +12,19 @@ html
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet',
-    href='https://fonts.googleapis.com/css?family=Montserrat|Raleway|Playfair+Display')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat|Raleway|Playfair+Display')
   body
     div.container
+      p.text-center.mt-0
+        <a href="/">Home</a> | <a href="/about">About</a> | <a href="/books">Books</a> | <a href="/#connect">Contact</a> | <a href="https://mailchi.mp/d071a31ee37b/58s3reaf18"> Mailing List </a>
+      a(href="/")
+        img(src="/images/bennett-garner-prof.png"
+          alt="Bennett Garner"
+          width="300px"
+          class="center")
       block content
       div.card
         p.
-          Uncopyright 2019: No rights reserved - use anything on this page
-          however you'd like.
+          Uncopyright: No rights reserved - use anything on this page however you'd like.
         p.
-          <a href="/">Home</a> | <a href="/about">About</a> |
-          <a href="/#connect">Contact</a>
+          <a href="/">Home</a> | <a href="/about">About</a> | <a href="/books">Books</a> | <a href="/#connect">Contact</a> | <a href="https://mailchi.mp/d071a31ee37b/58s3reaf18"> Mailing List </a>

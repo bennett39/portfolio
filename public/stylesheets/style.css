@@ -77,3 +77,7 @@ ul {
 .screenshot {
   border: solid 1px #dddddd;
 }
+
+.text-center {
+  text-align: center;
+}
